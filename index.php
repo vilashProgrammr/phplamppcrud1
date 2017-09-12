@@ -4,9 +4,8 @@ include_once 'dbconfig.php';
 // delete condition
 if(isset($_GET['delete_id']))
 {
-	$sql_query="DELETE FROM users WHERE user_id=".$_GET['delete_id'];
-	mysql_query($sql_query);
-	header("Location: $_SERVER[PHP_SELF]");
+	//delete logic here
+	
 }
 // delete condition
 
@@ -88,3 +87,9 @@ function delete_id(id)
 </center>
 </body>
 </html>
+<!--
+//copy and paste the below code in delete logic
+$sql_query="DELETE FROM users WHERE user_id=".$_GET['delete_id'];
+	mysql_query($sql_query);
+	header("Location: $_SERVER[PHP_SELF]");
+-->
